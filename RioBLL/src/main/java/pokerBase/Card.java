@@ -11,7 +11,7 @@ public class Card {
 	//TODO should these be private methods?
 	public Card(int iCardNbr, int iCardSuit, int iCardRank) {
 		this.iCardNbr = iCardNbr;
-		this.iCardSuit = iCardSuit;
+		this.iCardSuit = iCardSuit;//TODO which numbers are each suit?
 		this.iCardRank = iCardSuit;
 	}
 	
