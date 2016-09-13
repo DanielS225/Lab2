@@ -8,7 +8,7 @@ public class Card {
 	private int iCardSuit;
 	private int iCardRank; 
 	
-	// should these be private methods?
+	//TODO should these be private methods?
 	public Card(int iCardNbr, int iCardSuit, int iCardRank) {
 		this.iCardNbr = iCardNbr;
 		this.iCardSuit = iCardSuit;
