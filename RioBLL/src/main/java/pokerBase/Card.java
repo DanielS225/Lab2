@@ -8,11 +8,10 @@ public class Card {
 	private int iCardSuit;
 	private int iCardRank; 
 	
-	//TODO should these be private methods?
-	public Card(int iCardNbr, int iCardSuit, int iCardRank) {
+	public Card(int iCardRank, int iCardSuit, int iCardNbr) {
+		this.iCardRank = iCardRank;
+		this.iCardSuit = iCardSuit;
 		this.iCardNbr = iCardNbr;
-		this.iCardSuit = iCardSuit;//TODO which numbers are each suit?
-		this.iCardRank = iCardSuit;
 	}
 	
 	public int getiCardNbr() {
@@ -26,5 +25,11 @@ public class Card {
 	public int getiCardRank() {
 		return iCardRank;
 	}
+	
+	/*@Override
+	public int compareTo(Object arg0) {
+		Card c = (Card)arg0;
+		return c.iCardRank - this.iCardRank;
+	}*/
 	
 }
