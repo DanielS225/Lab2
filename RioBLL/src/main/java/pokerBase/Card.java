@@ -26,10 +26,10 @@ public class Card {
 		return iCardRank;
 	}
 	
-	/*@Override
+	@Override
 	public int compareTo(Object arg0) {
 		Card c = (Card)arg0;
 		return c.iCardRank - this.iCardRank;
-	}*/
+	}
 	
 }

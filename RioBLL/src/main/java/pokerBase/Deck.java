@@ -24,7 +24,7 @@ public class Deck  {
 		return DeckCards;
 	}
 	
-	public int getDeckSize() {
+	private int getDeckSize() {
 		return DeckCards.size();
 	}
 }
