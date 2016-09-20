@@ -1,14 +1,16 @@
 package pokerBase;
 
 import java.util.Comparator;
+import pokerEnums.eSuit;
+import pokerEnums.eRank;
 
 public class Card {
 
 	private int iCardNbr;
-	private int iCardSuit;
-	private int iCardRank; 
+	private eSuit iCardSuit;
+	private eRank iCardRank; 
 	
-	public Card(int iCardRank, int iCardSuit, int iCardNbr) {
+	public Card(eRank iCardRank, eSuit iCardSuit, int iCardNbr) {
 		this.iCardRank = iCardRank;
 		this.iCardSuit = iCardSuit;
 		this.iCardNbr = iCardNbr;
@@ -18,18 +20,17 @@ public class Card {
 		return iCardNbr;
 	}
 	
-	public int getiCardSuit() {
+	public eSuit geteSuit() {
 		return iCardSuit;
 	}
 	
-	public int getiCardRank() {
+	public eRank geteRank() {
 		return iCardRank;
 	}
 	
-	@Override
-	public int compareTo(Object arg0) {
-		Card c = (Card)arg0;
-		return c.iCardRank - this.iCardRank;
+	public int compareTo(Object o) {
+		Card c = (Card) o;
+		return c.geteRank().compareTo(this.geteRank());
 	}
 	
 }
