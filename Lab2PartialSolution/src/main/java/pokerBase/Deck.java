@@ -20,8 +20,18 @@ public class Deck {
 		Collections.shuffle(deckCards);
 	}
 	
+	public ArrayList<Card> getDeckCards() {
+		
+		return deckCards;
+	}
+	
 	public Card Draw(){
-		//TODO - Implement the Draw method
-		return null;
+		
+		return deckCards.remove(deckCards.size());
+	}
+	
+	public int getDeckSize() {
+		
+		return deckCards.size();
 	}
 }
